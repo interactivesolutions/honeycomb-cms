@@ -102,7 +102,15 @@ class HCCMSServiceProvider extends ServiceProvider
      */
     private function registerProviders()
     {
-        
+        $this->app->register(HCCoreUiServiceProvider::class);
+        $this->app->register(HCCoreServiceProvider::class);
+        $this->app->register(HCScriptsServiceProvider::class);
+        $this->app->register(HCResourcesServiceProvider::class);
+        $this->app->register(HCACLServiceProvider::class);
+        $this->app->register(HCLanguagesServiceProvider::class);
+        $this->app->register(HCRegionsServiceProvider::class);
+        $this->app->register(HCSlugsServiceProvider::class);
+        $this->app->register(HCURLShortenerServiceProvider::class);
     }
 }
 

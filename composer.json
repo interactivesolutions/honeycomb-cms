@@ -7,7 +7,16 @@
     "repositories": [],
     "require": {
         "php": ">=7.0.0",
-        "laravel/framework": "5.3.*"
+        "laravel/framework": "5.3.*",
+        "interactivesolutions/honeycomb-acl": "dev-master",
+        "interactivesolutions/honeycomb-core": "dev-master",
+        "interactivesolutions/honeycomb-core-ui": "dev-master",
+        "interactivesolutions/honeycomb-languages": "dev-master",
+        "interactivesolutions/honeycomb-regions": "dev-master",
+        "interactivesolutions/honeycomb-resources": "dev-master",
+        "interactivesolutions/honeycomb-scripts": "dev-master",
+        "interactivesolutions/honeycomb-slugs": "dev-master",
+        "interactivesolutions/honeycomb-url-shortener": "dev-master"
     },
     "autoload": {
         "psr-4": {
