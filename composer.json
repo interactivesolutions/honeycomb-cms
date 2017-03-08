@@ -1,27 +1,55 @@
 {
-    "name": "interactivesolutions/honeycomb-cms",
-    "description": "",
-    "keywords": [],
-    "license": "MIT",
-    "authors": [],
-    "repositories": [],
-    "require": {
-        "php": ">=7.0.0",
-        "laravel/framework": "5.3.*",
-        "interactivesolutions/honeycomb-acl": "dev-master",
-        "interactivesolutions/honeycomb-core": "dev-master",
-        "interactivesolutions/honeycomb-core-ui": "dev-master",
-        "interactivesolutions/honeycomb-languages": "dev-master",
-        "interactivesolutions/honeycomb-regions": "dev-master",
-        "interactivesolutions/honeycomb-resources": "dev-master",
-        "interactivesolutions/honeycomb-scripts": "dev-master",
-        "interactivesolutions/honeycomb-slugs": "dev-master",
-        "interactivesolutions/honeycomb-url-shortener": "dev-master"
+  "name": "interactivesolutions/honeycomb-cms",
+  "description": "Main HoneyComb package to install all core functionality of the CMS",
+  "keywords": [
+    "honeycombcms",
+    "honeycomb",
+    "cms",
+    "package",
+    "cmspackage",
+    "cms functionality",
+    "core",
+    "acl",
+    "scripts",
+    "resources",
+    "languages",
+    "regions",
+    "slugs",
+    "url-shortener"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mantas Gelčius",
+      "email": "mantas.gelcius@gmail.com"
     },
-    "autoload": {
-        "psr-4": {
-            "interactivesolutions\\honeycombcms\\": "src/"
-        }
+    {
+      "name": "Liutauras Kavaliauskas",
+      "email": "liutauraskav@gmail.com"
     },
-    "minimum-stability": "dev"
+    {
+      "name": "Jevgenij Dmitrijev",
+      "email": "jd@interactivesolutions.lt"
+    }
+  ],
+  "repositories": [],
+  "require": {
+    "php": ">=7.0.0",
+    "laravel/framework": "5.3.*",
+    "interactivesolutions/honeycomb-acl": "dev-master",
+    "interactivesolutions/honeycomb-core": "dev-master",
+    "interactivesolutions/honeycomb-core-ui": "dev-master",
+    "interactivesolutions/honeycomb-languages": "dev-master",
+    "interactivesolutions/honeycomb-regions": "dev-master",
+    "interactivesolutions/honeycomb-resources": "dev-master",
+    "interactivesolutions/honeycomb-scripts": "dev-master",
+    "interactivesolutions/honeycomb-slugs": "dev-master",
+    "interactivesolutions/honeycomb-url-shortener": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "interactivesolutions\\honeycombcms\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
 }
