@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 use interactivesolutions\honeycombacl\app\providers\HCACLServiceProvider;
 use interactivesolutions\honeycombcore\providers\HCCoreServiceProvider;
 use interactivesolutions\honeycombcoreui\providers\HCCoreUiServiceProvider;
-use interactivesolutions\honeycombdocs\app\providers\HCDocsServiceProvider;
 use interactivesolutions\honeycomblanguages\app\providers\HCLanguagesServiceProvider;
 use interactivesolutions\honeycombregions\app\providers\HCRegionsServiceProvider;
 use interactivesolutions\honeycombresources\app\providers\HCResourcesServiceProvider;
@@ -112,7 +111,6 @@ class HCCMSServiceProvider extends ServiceProvider
         $this->app->register(HCRegionsServiceProvider::class);
         $this->app->register(HCSlugsServiceProvider::class);
         $this->app->register(HCURLShortenerServiceProvider::class);
-        $this->app->register(HCDocsServiceProvider::class);
     }
 }
 
