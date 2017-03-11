@@ -24,12 +24,6 @@ Firstly register the service provider and Facade by opening `config/app.php`
 
     interactivesolutions\honeycombcms\app\providers\HCCMSServiceProvider::class,
     
-Change user providers model in `config/auth.php`
-
-    'model' => interactivesolutions\honeycombacl\app\models\HCUsers::class,
-    
-We strongly recommend to use `'charset' => 'utf8mb4'` and `'collation' => 'utf8mb4_unicode_ci'` in `config/database.php` 
-
 Run command for deleting default laravel project files and creating HoneyComb CMS ready structure
 
     php artisan make:hcproject
