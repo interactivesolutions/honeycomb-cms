@@ -15,11 +15,8 @@ use interactivesolutions\honeycomburlshortener\app\providers\HCURLShortenerServi
 
 class HCCMSServiceProvider extends HCBaseServiceProvider
 {
-    /**
-     * Register commands
-     *
-     * @var array
-     */
+    protected $homeDirectory = __DIR__;
+
     protected $commands = [];
 
     protected $namespace = 'interactivesolutions\honeycombcms\app\http\controllers';
