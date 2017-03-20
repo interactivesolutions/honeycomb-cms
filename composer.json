@@ -46,7 +46,12 @@
     [
       "echo TESTING WORKS YAY",
       "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
-    ]
+    ],
+    "pre-install-cmd": ["echo before install"],
+    "post-install-cmd": ["echo after install"],
+    "post-update-cmd": ["echo update install"]
+
+
   },
   "minimum-stability": "dev"
 }
