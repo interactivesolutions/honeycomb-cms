@@ -33,7 +33,7 @@
     }
   ],
   "scripts": {
-    "pre-update-cmd": "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
+    "pre-package-install": "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
   },
   "repositories": [],
   "require": {
