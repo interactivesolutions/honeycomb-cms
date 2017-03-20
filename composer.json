@@ -32,9 +32,6 @@
       "email": "jd@interactivesolutions.lt"
     }
   ],
-  "scripts": {
-    "pre-package-install": "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
-  },
   "repositories": [],
   "require": {
     "php": ">=7.0.0"
@@ -43,6 +40,13 @@
     "psr-4": {
       "interactivesolutions\\honeycombcms\\": "src/"
     }
+  },
+  "scripts": {
+    "pre-package-install":
+    [
+      "echo TESTING WORKS YAY",
+      "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
+    ]
   },
   "minimum-stability": "dev"
 }
