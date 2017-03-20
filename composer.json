@@ -46,6 +46,9 @@
     "interactivesolutions/honeycomb-slugs": "dev-master",
     "interactivesolutions/honeycomb-url-shortener": "dev-master"
   },
+  "scripts": {
+    "pre-update-cmd": "@composer create-project laravel/laravel HoneyCombCMS '5.3.*'"
+  },
   "autoload": {
     "psr-4": {
       "interactivesolutions\\honeycombcms\\": "src/"
