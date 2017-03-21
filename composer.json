@@ -36,20 +36,19 @@
   "require": {
     "php": ">=7.0.0",
     "laravel/framework": "5.3.*",
-    "interactivesolutions/honeycomb-acl": "dev-master",
-    "interactivesolutions/honeycomb-core": "dev-master",
-    "interactivesolutions/honeycomb-core-ui": "dev-master",
-    "interactivesolutions/honeycomb-languages": "dev-master",
-    "interactivesolutions/honeycomb-regions": "dev-master",
-    "interactivesolutions/honeycomb-resources": "dev-master",
-    "interactivesolutions/honeycomb-scripts": "dev-master",
-    "interactivesolutions/honeycomb-slugs": "dev-master",
-    "interactivesolutions/honeycomb-url-shortener": "dev-master"
+    "interactivesolutions/honeycomb-acl": "*",
+    "interactivesolutions/honeycomb-core": "*",
+    "interactivesolutions/honeycomb-core-ui": "*",
+    "interactivesolutions/honeycomb-languages": "*",
+    "interactivesolutions/honeycomb-regions": "*",
+    "interactivesolutions/honeycomb-resources": "*",
+    "interactivesolutions/honeycomb-scripts": "*",
+    "interactivesolutions/honeycomb-slugs": "*",
+    "interactivesolutions/honeycomb-url-shortener": "*"
   },
   "autoload": {
     "psr-4": {
       "interactivesolutions\\honeycombcms\\": "src/"
     }
-  },
-  "minimum-stability": "dev"
+  }
 }
