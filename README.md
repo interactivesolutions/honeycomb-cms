@@ -23,10 +23,14 @@ or
 Firstly register the service provider and Facade by opening `config/app.php`
 
     interactivesolutions\honeycombcms\app\providers\HCCMSServiceProvider::class,
+
+Dump the composer
+
+    composer dump
     
 Run command for deleting default laravel project files and creating HoneyComb CMS ready structure
 
-    php artisan make:hcproject
+    php artisan hc:new-project
     
 Finally run last command to update all of the HoneyComb CMS environment
 
