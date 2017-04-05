@@ -9,13 +9,13 @@ Begin by installing this package through Composer.
 ```js
 	{
 	    "require": {
-	        "interactivesolutions/honeycomb-cms": "dev-master"
+	        "interactivesolutions/honeycomb-cms": "*"
 	    }
 	}
 ```
 or
 ```js
-    composer require interactivesolutions/honeycomb-cms dev-master
+    composer require interactivesolutions/honeycomb-cms
 ```
 
 ## Laravel installation
