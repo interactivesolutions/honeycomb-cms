@@ -32,6 +32,10 @@ Run command for deleting default laravel project files and creating HoneyComb CM
 
     php artisan hc:new-project
     
-Finally run last command to update all of the HoneyComb CMS environment
+Dump the composer
+
+    composer dump
+    
+Finally run last command to update all of the HoneyComb CMS environment. Make sure you have .env file filled. This required db connection.
 
     php artisan hc:update
