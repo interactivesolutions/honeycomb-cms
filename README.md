@@ -36,6 +36,6 @@ Dump the composer
 
     composer dump
     
-Finally run last command to update all of the HoneyComb CMS environment. Make sure you have .env file filled. This required db connection.
+Finally run last command to update all of the HoneyComb CMS environment. Make sure you have .env file filled. This step requires database connection.
 
     php artisan hc:update
