@@ -3,10 +3,13 @@
 namespace interactivesolutions\honeycombcms\app\providers;
 
 use interactivesolutions\honeycombacl\app\providers\HCACLServiceProvider;
+use interactivesolutions\honeycombapps\app\providers\HCAppsServiceProvider;
 use interactivesolutions\honeycombcore\providers\HCBaseServiceProvider;
 use interactivesolutions\honeycombcore\providers\HCCoreServiceProvider;
 use interactivesolutions\honeycombcoreui\providers\HCCoreUiServiceProvider;
+use interactivesolutions\honeycombgalleries\app\providers\HCGalleriesServiceProvider;
 use interactivesolutions\honeycomblanguages\app\providers\HCLanguagesServiceProvider;
+use interactivesolutions\honeycombpages\app\providers\HCPagesServiceProvider;
 use interactivesolutions\honeycombregions\app\providers\HCRegionsServiceProvider;
 use interactivesolutions\honeycombresources\app\providers\HCResourcesServiceProvider;
 use interactivesolutions\honeycombscripts\app\providers\HCScriptsServiceProvider;
@@ -35,6 +38,9 @@ class HCCMSServiceProvider extends HCBaseServiceProvider
         $this->app->register(HCRegionsServiceProvider::class);
         $this->app->register(HCSlugsServiceProvider::class);
         $this->app->register(HCURLShortenerServiceProvider::class);
+        $this->app->register(HCAppsServiceProvider::class);
+        $this->app->register(HCGalleriesServiceProvider::class);
+        $this->app->register(HCPagesServiceProvider::class);
     }
 }
 
