@@ -28,6 +28,10 @@ Dump the composer
 
     composer dump
     
+Run command for creating a admin url, so you will have a secure adminXXXXXXXX url to get to the backend
+
+    php artisan hc:admin-url
+    
 Run command for deleting default laravel project files and creating HoneyComb CMS ready structure
 
     php artisan hc:new-project
