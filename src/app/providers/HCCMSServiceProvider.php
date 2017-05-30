@@ -14,6 +14,7 @@ use interactivesolutions\honeycombregions\app\providers\HCRegionsServiceProvider
 use interactivesolutions\honeycombresources\app\providers\HCResourcesServiceProvider;
 use interactivesolutions\honeycombscripts\app\providers\HCScriptsServiceProvider;
 use interactivesolutions\honeycombslugs\app\providers\HCSlugsServiceProvider;
+use interactivesolutions\honeycombtranslations\app\providers\HCTranslationsServiceProvider;
 use interactivesolutions\honeycomburlshortener\app\providers\HCURLShortenerServiceProvider;
 
 class HCCMSServiceProvider extends HCBaseServiceProvider
@@ -41,6 +42,7 @@ class HCCMSServiceProvider extends HCBaseServiceProvider
         $this->app->register(HCAppsServiceProvider::class);
         $this->app->register(HCGalleriesServiceProvider::class);
         $this->app->register(HCPagesServiceProvider::class);
+        $this->app->register(HCTranslationsServiceProvider::class);
     }
 }
 
