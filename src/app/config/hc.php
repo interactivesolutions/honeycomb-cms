@@ -26,4 +26,19 @@ return [
         //
     ],
 
+    /**
+     * Redirect url
+     */
+    'auth_redirect' => env('AUTH_REDIRECT', 'auth/login'),
+
+    /**
+     * Lifespan expand time
+     */
+    'api_token_lifespan_expand' => env('HC_API_TOKEN_LIFESPAN_EXPAND', 0),
+
+    /**
+     * Short url length
+     */
+    'short_url_length' => env('SHORT_URL_LENGTH', 5),
+
 ];
