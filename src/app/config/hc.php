@@ -11,7 +11,7 @@ return [
     | By default admin url is "/admin"
     |
     */
-    'admin_url' => env('HC_ADMIN_URL', 'admin'),
+    'admin_url' => 'admin',
 
     /*
      |--------------------------------------------------------------------------
@@ -26,19 +26,25 @@ return [
         //
     ],
 
-    /**
-     * Redirect url
-     */
-    'auth_redirect' => env('AUTH_REDIRECT', 'auth/login'),
+    /*
+    |---------------------------------------------------------------------------
+    | Redirect url
+    |---------------------------------------------------------------------------
+    */
+    'auth_redirect' => 'auth/login',
 
-    /**
-     * Lifespan expand time
-     */
-    'api_token_lifespan_expand' => env('HC_API_TOKEN_LIFESPAN_EXPAND', 0),
+    /*
+    |---------------------------------------------------------------------------
+    | Lifespan expand time
+    |---------------------------------------------------------------------------
+    */
+    'api_token_lifespan_expand' => 0,
 
-    /**
-     * Short url length
-     */
-    'short_url_length' => env('SHORT_URL_LENGTH', 5),
+    /*
+    |---------------------------------------------------------------------------
+    | Short url length
+    |---------------------------------------------------------------------------
+    */
+    'short_url_length' => 5,
 
 ];
