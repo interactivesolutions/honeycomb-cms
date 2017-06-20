@@ -9,20 +9,28 @@
     "adminMenu":
     [
         {
-            "path" : "admin/hc",
             "route" : "admin.index",
             "translation" : "CMS",
             "iconPath" : "/img/icons/hc-icon-white.svg",
-            "aclPermission" : "CMS-MENU-SECTION"
+            "aclPermission" : "cms-menu-section"
         }
     ],
     "acl":
     {
         "permissions" :
         [
+            {
+                "name": "CMS",
+                "controller": "",
+                "actions": [
+                    "cms-menu-section"
+                ]
+            }
         ],
-        "rolesActions" :
-        [
-        ]
+        "rolesActions" : {
+            "project-admin": [
+                "cms-menu-section"
+            ]
+        }
     }
 }
