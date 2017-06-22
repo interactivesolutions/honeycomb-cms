@@ -12,7 +12,8 @@
             "route" : "admin.index",
             "translation" : "CMS",
             "iconPath" : "/img/icons/hc-icon-white.svg",
-            "aclPermission" : "cms-menu-section"
+            "aclPermission" : "cms-menu-section",
+            "priority": 0
         }
     ],
     "acl":
