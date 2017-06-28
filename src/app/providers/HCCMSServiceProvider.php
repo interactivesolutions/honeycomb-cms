@@ -9,6 +9,7 @@ use interactivesolutions\honeycombcore\providers\HCCoreServiceProvider;
 use interactivesolutions\honeycombcoreui\providers\HCCoreUiServiceProvider;
 use interactivesolutions\honeycombgalleries\app\providers\HCGalleriesServiceProvider;
 use interactivesolutions\honeycomblanguages\app\providers\HCLanguagesServiceProvider;
+use interactivesolutions\honeycombmenu\app\providers\HCMenuServiceProvider;
 use interactivesolutions\honeycombpages\app\providers\HCPagesServiceProvider;
 use interactivesolutions\honeycombregions\app\providers\HCRegionsServiceProvider;
 use interactivesolutions\honeycombresources\app\providers\HCResourcesServiceProvider;
@@ -43,6 +44,7 @@ class HCCMSServiceProvider extends HCBaseServiceProvider
         $this->app->register(HCGalleriesServiceProvider::class);
         $this->app->register(HCPagesServiceProvider::class);
         $this->app->register(HCTranslationsServiceProvider::class);
+        $this->app->register(HCMenuServiceProvider::class);
     }
 }
 
