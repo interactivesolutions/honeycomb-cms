@@ -11,7 +11,7 @@ return [
     | By default admin url is "/admin"
     |
     */
-    'admin_url' => 'admin',
+    'admin_url'                 => 'admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +21,14 @@ return [
     | You can allow users to register their account by themselves
     |
     */
-    'allow_registration' => false,
+    'allow_registration'        => false,
+
+    /*
+     |--------------------------------------------------------------------------
+     | List of first segment in routes which do not require a language middleware
+     |--------------------------------------------------------------------------
+     */
+    "noLanguage"                => [config('hc.admin_url'), 'auth', 'api', 'language', 'password', 'r', 'resources'],
 
     /*
      |--------------------------------------------------------------------------
@@ -32,7 +39,7 @@ return [
      | 'package::view.name' => 'your.custom.view.name'
      |
      */
-    "views" => [
+    "views"                     => [
         //
     ],
 
@@ -41,7 +48,7 @@ return [
     | Redirect url
     |---------------------------------------------------------------------------
     */
-    'auth_redirect' => 'auth/login',
+    'auth_redirect'             => 'auth/login',
 
     /*
     |---------------------------------------------------------------------------
@@ -55,13 +62,13 @@ return [
     | Short url length
     |---------------------------------------------------------------------------
     */
-    'short_url_length' => 5,
-
+    'short_url_length'          => 5,
+    
     /*
     |---------------------------------------------------------------------------
     | Banner prefix link
     |---------------------------------------------------------------------------
     */
-    'banner_prefix' => 'visual-info',
+    'banner_prefix'             => 'visual-info',
 
 ];
