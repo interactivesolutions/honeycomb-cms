@@ -28,7 +28,7 @@ return [
      | List of first segment in routes which do not require a language middleware
      |--------------------------------------------------------------------------
      */
-    "noLanguage"                => [config('hc.admin_url'), 'auth', 'api', 'language', 'password', 'r', 'resources'],
+    "noLanguage"                => ['auth', 'api', 'language', 'password', 'r', 'resources'],
 
     /*
      |--------------------------------------------------------------------------
@@ -63,7 +63,7 @@ return [
     |---------------------------------------------------------------------------
     */
     'short_url_length'          => 5,
-    
+
     /*
     |---------------------------------------------------------------------------
     | Banner prefix link
