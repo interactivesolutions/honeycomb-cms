@@ -1,37 +1,32 @@
 {
-    "general":
+  "general": {
+    "serviceProviderNameSpace": "HCCMS"
+  },
+  "formData": [
+  ],
+  "adminMenu": [
     {
-        "serviceProviderNameSpace": "HCCMS"
-    },
-    "formData":
-    [
-    ],
-    "adminMenu":
-    [
-        {
-            "route" : "admin.index",
-            "translation" : "CMS",
-            "iconPath" : "/img/icons/hc-icon-white.svg",
-            "aclPermission" : "cms-menu-section",
-            "priority": 0
-        }
-    ],
-    "acl":
-    {
-        "permissions" :
-        [
-            {
-                "name": "CMS",
-                "controller": "",
-                "actions": [
-                    "cms-menu-section"
-                ]
-            }
-        ],
-        "rolesActions" : {
-            "project-admin": [
-                "cms-menu-section"
-            ]
-        }
+      "route": "admin.index",
+      "translation": "CMS",
+      "iconPath": "/img/icons/hc-icon-white.svg",
+      "aclPermission": "cms-menu-section",
+      "priority": 0
     }
+  ],
+  "acl": {
+    "permissions": [
+      {
+        "name": "CMS",
+        "controller": "",
+        "actions": [
+          "cms-menu-section"
+        ]
+      }
+    ],
+    "rolesActions": {
+      "project-admin": [
+        "cms-menu-section"
+      ]
+    }
+  }
 }
