@@ -1,8 +1,10 @@
 <?php
 
-namespace interactivesolutions\honeycombcms\app\providers;
+declare(strict_types = 1);
 
-use interactivesolutions\honeycombacl\app\providers\HCACLServiceProvider;
+namespace InteractiveSolutions\HoneycombCms\app\providers;
+
+use InteractiveSolutions\HoneycombAcl\Providers\HCACLServiceProvider;
 use interactivesolutions\honeycombapps\app\providers\HCAppsServiceProvider;
 use interactivesolutions\honeycombcore\providers\HCBaseServiceProvider;
 use interactivesolutions\honeycombcore\providers\HCCoreServiceProvider;
@@ -13,7 +15,7 @@ use interactivesolutions\honeycombmenu\app\providers\HCMenuServiceProvider;
 use interactivesolutions\honeycombpages\app\providers\HCPagesServiceProvider;
 use interactivesolutions\honeycombregions\app\providers\HCRegionsServiceProvider;
 use interactivesolutions\honeycombresources\app\providers\HCResourcesServiceProvider;
-use interactivesolutions\honeycombscripts\app\providers\HCScriptsServiceProvider;
+use InteractiveSolutions\HoneycombScripts\app\providers\HCScriptsServiceProvider;
 use interactivesolutions\honeycombslugs\app\providers\HCSlugsServiceProvider;
 use interactivesolutions\honeycombtranslations\app\providers\HCTranslationsServiceProvider;
 use interactivesolutions\honeycomburlshortener\app\providers\HCURLShortenerServiceProvider;
@@ -24,7 +26,7 @@ class HCCMSServiceProvider extends HCBaseServiceProvider
 
     protected $commands = [];
 
-    protected $namespace = 'interactivesolutions\honeycombcms\app\http\controllers';
+    protected $namespace = 'InteractiveSolutions\HoneycombCms\app\http\controllers';
 
     /**
      * Registering 3rd party providers which are required for this package to run

@@ -1,8 +1,15 @@
 <?php
-namespace interactivesolutions\honeycombcms\database\seeds;
+
+declare(strict_types = 1);
+
+namespace InteractiveSolutions\HoneycombCms\database\seeds;
 
 use Illuminate\Database\Seeder;
 
+/**
+ * Class HoneyCombDatabaseSeeder
+ * @package InteractiveSolutions\HoneycombCms\database\seeds
+ */
 class HoneyCombDatabaseSeeder extends Seeder
 {
     /**
@@ -10,7 +17,7 @@ class HoneyCombDatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
 
     }
