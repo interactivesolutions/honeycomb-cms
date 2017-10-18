@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "63d4cd99444001800493a83b0939cc26",
+    "content-hash": "c616c3e1f4057e7c34c79097a31e4dd0",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -905,23 +905,23 @@
         },
         {
             "name": "interactivesolutions/honeycomb-acl",
-            "version": "v1.0.1",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-acl.git",
-                "reference": "391e68b1e7b50a8d90ccaab12028c19742793253"
+                "reference": "9c0da1687aca07252ad805102a318598dd556043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-acl/zipball/391e68b1e7b50a8d90ccaab12028c19742793253",
-                "reference": "391e68b1e7b50a8d90ccaab12028c19742793253",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-acl/zipball/9c0da1687aca07252ad805102a318598dd556043",
+                "reference": "9c0da1687aca07252ad805102a318598dd556043",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "~6.0",
-                "interactivesolutions/honeycomb-core": "~0.6.0",
-                "interactivesolutions/honeycomb-languages": "^0.6.3",
-                "interactivesolutions/honeycomb-scripts": "^1.0.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
+                "interactivesolutions/honeycomb-languages": "~1.0.0",
+                "interactivesolutions/honeycomb-scripts": "~1.0.0",
                 "laravel/framework": "5.3.*",
                 "php": ">=7.1"
             },
@@ -965,26 +965,32 @@
                 "package",
                 "permissions"
             ],
-            "time": "2017-10-18T08:51:36+00:00"
+            "time": "2017-10-18T17:31:00+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-apps",
-            "version": "0.7.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-apps.git",
-                "reference": "a65ed21829a36c8606826574e7e7f0582b3913be"
+                "reference": "1d43bd95a89e1c842a6122b289361958989ed1d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-apps/zipball/a65ed21829a36c8606826574e7e7f0582b3913be",
-                "reference": "a65ed21829a36c8606826574e7e7f0582b3913be",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-apps/zipball/1d43bd95a89e1c842a6122b289361958989ed1d4",
+                "reference": "1d43bd95a89e1c842a6122b289361958989ed1d4",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "^1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -996,34 +1002,50 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-06-29T11:28:52+00:00"
+            "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
+                {
+                    "name": "Jevgenij Dmitrijev",
+                    "email": "jd@interactivesolutions.lt"
+                }
+            ],
+            "time": "2017-10-18T13:23:39+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-core",
-            "version": "0.6.8",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-core.git",
-                "reference": "33cb8f8b76b20a8a629dfb24390624967044e009"
+                "reference": "122181c8430498e1d9c80207f6ab340ae4e9135c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-core/zipball/33cb8f8b76b20a8a629dfb24390624967044e009",
-                "reference": "33cb8f8b76b20a8a629dfb24390624967044e009",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-core/zipball/122181c8430498e1d9c80207f6ab340ae4e9135c",
+                "reference": "122181c8430498e1d9c80207f6ab340ae4e9135c",
                 "shasum": ""
             },
             "require": {
                 "jenssegers/rollbar": "*",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "ramsey/uuid": "^3.5",
                 "rap2hpoutre/laravel-log-viewer": "*",
                 "spatie/laravel-cookie-consent": "1.*"
             },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "interactivesolutions\\honeycombcore\\": "src/"
+                    "InteractiveSolutions\\HoneycombCore\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1031,6 +1053,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Mantas Paulauskas",
                     "email": "mp@interactivesolutions.lt"
@@ -1047,26 +1073,32 @@
                 "honeycomb",
                 "laravel"
             ],
-            "time": "2017-10-16T12:43:07+00:00"
+            "time": "2017-10-18T13:06:06+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-core-ui",
-            "version": "0.6.24",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-core-ui.git",
-                "reference": "3b27ff5d6a4e2b7edcce07d703098094150d193f"
+                "reference": "96cb3f59b4a89178a792c11ea2a5edae6d3121aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-core-ui/zipball/3b27ff5d6a4e2b7edcce07d703098094150d193f",
-                "reference": "3b27ff5d6a4e2b7edcce07d703098094150d193f",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-core-ui/zipball/96cb3f59b4a89178a792c11ea2a5edae6d3121aa",
+                "reference": "96cb3f59b4a89178a792c11ea2a5edae6d3121aa",
                 "shasum": ""
             },
             "require": {
                 "devfactory/minify": "^1.0",
-                "interactivesolutions/honeycomb-core": "~0.6.0",
-                "php": ">=7.0.0"
+                "interactivesolutions/honeycomb-core": "~1.0.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1079,6 +1111,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Mantas Paulauskas",
                     "email": "mp@interactivesolutions.lt"
@@ -1098,26 +1134,33 @@
                 "laravel",
                 "ui"
             ],
-            "time": "2017-10-16T08:12:04+00:00"
+            "time": "2017-10-18T18:15:06+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-galleries",
-            "version": "0.6.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-galleries.git",
-                "reference": "c993b786c06365444314a642f6596aa441b5faa4"
+                "reference": "ba86227aeb3ebc6afc82215e563b5ed8a5294f6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-galleries/zipball/c993b786c06365444314a642f6596aa441b5faa4",
-                "reference": "c993b786c06365444314a642f6596aa441b5faa4",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-galleries/zipball/ba86227aeb3ebc6afc82215e563b5ed8a5294f6e",
+                "reference": "ba86227aeb3ebc6afc82215e563b5ed8a5294f6e",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
+                "interactivesolutions/honeycomb-resources": "^1.0",
                 "laravel/framework": "5.3.*",
                 "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1129,26 +1172,42 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-06-29T11:29:22+00:00"
+            "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
+                {
+                    "name": "Jevgenij Dmitrijev",
+                    "email": "jd@interactivesolutions.lt"
+                }
+            ],
+            "time": "2017-10-18T14:00:00+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-languages",
-            "version": "0.6.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-languages.git",
-                "reference": "d4212757743a1e833b2a21f474ba3dd8a4b161fb"
+                "reference": "ce59cc590960391276a1bd906476824a190d19f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-languages/zipball/d4212757743a1e833b2a21f474ba3dd8a4b161fb",
-                "reference": "d4212757743a1e833b2a21f474ba3dd8a4b161fb",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-languages/zipball/ce59cc590960391276a1bd906476824a190d19f2",
+                "reference": "ce59cc590960391276a1bd906476824a190d19f2",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1161,6 +1220,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Jevgenij Dmitrijev",
                     "email": "jd@interactivesolutions.lt"
@@ -1190,26 +1253,32 @@
                 "package",
                 "world languages"
             ],
-            "time": "2017-10-13T14:13:23+00:00"
+            "time": "2017-10-18T16:54:22+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-menu",
-            "version": "0.2.7",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-menu.git",
-                "reference": "9ba3a6581f9929fc4526b6f238991808b437657a"
+                "reference": "4537d9804cdaa38655faff481e552c832540401a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-menu/zipball/9ba3a6581f9929fc4526b6f238991808b437657a",
-                "reference": "9ba3a6581f9929fc4526b6f238991808b437657a",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-menu/zipball/4537d9804cdaa38655faff481e552c832540401a",
+                "reference": "4537d9804cdaa38655faff481e552c832540401a",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1221,27 +1290,43 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-10-03T09:35:09+00:00"
+            "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
+                {
+                    "name": "Jevgenij Dmitrijev",
+                    "email": "jd@interactivesolutions.lt"
+                }
+            ],
+            "time": "2017-10-18T19:03:36+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-pages",
-            "version": "0.6.9",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-pages.git",
-                "reference": "fe079b03de763dbe11ac6ba7e3c27e0ce7bad482"
+                "reference": "541e15fe1f98828bb65a3d1165e79bc6201978ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-pages/zipball/fe079b03de763dbe11ac6ba7e3c27e0ce7bad482",
-                "reference": "fe079b03de763dbe11ac6ba7e3c27e0ce7bad482",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-pages/zipball/541e15fe1f98828bb65a3d1165e79bc6201978ad",
+                "reference": "541e15fe1f98828bb65a3d1165e79bc6201978ad",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
-                "interactivesolutions/honeycomb-menu": "~0.2.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
+                "interactivesolutions/honeycomb-menu": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1253,27 +1338,43 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-08-22T17:13:26+00:00"
+            "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
+                {
+                    "name": "Jevgenij Dmitrijev",
+                    "email": "jd@interactivesolutions.lt"
+                }
+            ],
+            "time": "2017-10-18T19:18:24+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-regions",
-            "version": "0.6.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-regions.git",
-                "reference": "80ecc48563b04910870515dc84f03b9189070368"
+                "reference": "ebdc779dcd9f6e93b4e9fb2c8fd6e458fa976fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-regions/zipball/80ecc48563b04910870515dc84f03b9189070368",
-                "reference": "80ecc48563b04910870515dc84f03b9189070368",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-regions/zipball/ebdc779dcd9f6e93b4e9fb2c8fd6e458fa976fdb",
+                "reference": "ebdc779dcd9f6e93b4e9fb2c8fd6e458fa976fdb",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "rinvex/country": "^3.0"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1286,6 +1387,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Jevgenij Dmitrijev",
                     "email": "jd@interactivesolutions.lt"
@@ -1312,28 +1417,34 @@
                 "streets",
                 "world"
             ],
-            "time": "2017-09-20T08:18:18+00:00"
+            "time": "2017-10-18T18:50:00+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-resources",
-            "version": "0.6.2",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-resources.git",
-                "reference": "79cfcce99f24ee1905d6b75ee19476d71381a520"
+                "reference": "0e7b055fc545b8f7806fdbec81594f31d2313747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-resources/zipball/79cfcce99f24ee1905d6b75ee19476d71381a520",
-                "reference": "79cfcce99f24ee1905d6b75ee19476d71381a520",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-resources/zipball/0e7b055fc545b8f7806fdbec81594f31d2313747",
+                "reference": "0e7b055fc545b8f7806fdbec81594f31d2313747",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "intervention/image": "^2.3",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "php-ffmpeg/php-ffmpeg": "^0.9.3"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1346,6 +1457,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Jevgenij Dmitrijev",
                     "email": "jd@interactivesolutions.lt"
@@ -1367,25 +1482,25 @@
                 "resource",
                 "resources"
             ],
-            "time": "2017-08-25T12:37:29+00:00"
+            "time": "2017-10-18T13:53:52+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-scripts",
-            "version": "v1.0.1",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-scripts.git",
-                "reference": "9854320aca1ccb037a02c76a73666ef605e8afa5"
+                "reference": "9f101478a4e53d3b6fa05e8149594860d1385de0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-scripts/zipball/9854320aca1ccb037a02c76a73666ef605e8afa5",
-                "reference": "9854320aca1ccb037a02c76a73666ef605e8afa5",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-scripts/zipball/9f101478a4e53d3b6fa05e8149594860d1385de0",
+                "reference": "9f101478a4e53d3b6fa05e8149594860d1385de0",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
-                "interactivesolutions/honeycomb-languages": "^0.6.3",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
+                "interactivesolutions/honeycomb-languages": "~1.0.0",
                 "laravel/framework": "5.3.*",
                 "nette/reflection": "^2.4",
                 "php": ">=7.1",
@@ -1433,26 +1548,32 @@
                 "laravel",
                 "scripts"
             ],
-            "time": "2017-10-18T10:32:53+00:00"
+            "time": "2017-10-18T17:07:00+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-slugs",
-            "version": "0.6.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-slugs.git",
-                "reference": "7bfbe576e3c9d1cc900491641307a995f7520237"
+                "reference": "68822517fe4800db8b67ec724eca585b245d6197"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-slugs/zipball/7bfbe576e3c9d1cc900491641307a995f7520237",
-                "reference": "7bfbe576e3c9d1cc900491641307a995f7520237",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-slugs/zipball/68822517fe4800db8b67ec724eca585b245d6197",
+                "reference": "68822517fe4800db8b67ec724eca585b245d6197",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
                 "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1465,6 +1586,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Jevgenij Dmitrijev",
                     "email": "jd@interactivesolutions.lt"
@@ -1488,26 +1613,32 @@
                 "url-validate",
                 "validate"
             ],
-            "time": "2017-06-29T11:31:57+00:00"
+            "time": "2017-10-18T14:27:07+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-translations",
-            "version": "0.4.9",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-translations.git",
-                "reference": "ad3e05fc4063ac480c449a53a567b72399225002"
+                "reference": "9af8b495f5921ca6cb75889578065df8874929fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-translations/zipball/ad3e05fc4063ac480c449a53a567b72399225002",
-                "reference": "ad3e05fc4063ac480c449a53a567b72399225002",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-translations/zipball/9af8b495f5921ca6cb75889578065df8874929fc",
+                "reference": "9af8b495f5921ca6cb75889578065df8874929fc",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1519,26 +1650,42 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-09-21T11:42:20+00:00"
+            "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
+                {
+                    "name": "Jevgenij Dmitrijev",
+                    "email": "jd@interactivesolutions.lt"
+                }
+            ],
+            "time": "2017-10-18T19:41:03+00:00"
         },
         {
             "name": "interactivesolutions/honeycomb-url-shortener",
-            "version": "0.6.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/interactivesolutions/honeycomb-url-shortener.git",
-                "reference": "5798e74937cee6cd8d99ac2b2620f70ddfec8014"
+                "reference": "88c0b7af906ef566c67bc0c09350139c02ca7af7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-url-shortener/zipball/5798e74937cee6cd8d99ac2b2620f70ddfec8014",
-                "reference": "5798e74937cee6cd8d99ac2b2620f70ddfec8014",
+                "url": "https://api.github.com/repos/interactivesolutions/honeycomb-url-shortener/zipball/88c0b7af906ef566c67bc0c09350139c02ca7af7",
+                "reference": "88c0b7af906ef566c67bc0c09350139c02ca7af7",
                 "shasum": ""
             },
             "require": {
-                "interactivesolutions/honeycomb-core": "~0.6.0",
+                "interactivesolutions/honeycomb-core": "~1.0.0",
                 "laravel/framework": "5.3.*",
-                "php": ">=7.0.0"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^0.14",
+                "mockery/mockery": "^0.9",
+                "orchestra/testbench-browser-kit": "^3.3",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -1551,6 +1698,10 @@
                 "MIT"
             ],
             "authors": [
+                {
+                    "name": "Vytautas Rimeikis",
+                    "email": "vytautas.rimeikis@gmail.com"
+                },
                 {
                     "name": "Jevgenij Dmitrijev",
                     "email": "jd@interactivesolutions.lt"
@@ -1575,7 +1726,7 @@
                 "shortener",
                 "url"
             ],
-            "time": "2017-08-08T07:33:12+00:00"
+            "time": "2017-10-18T19:33:24+00:00"
         },
         {
             "name": "intervention/image",

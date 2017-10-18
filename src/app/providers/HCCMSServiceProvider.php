@@ -6,8 +6,8 @@ namespace InteractiveSolutions\HoneycombCms\app\providers;
 
 use InteractiveSolutions\HoneycombAcl\Providers\HCACLServiceProvider;
 use interactivesolutions\honeycombapps\app\providers\HCAppsServiceProvider;
-use interactivesolutions\honeycombcore\providers\HCBaseServiceProvider;
-use interactivesolutions\honeycombcore\providers\HCCoreServiceProvider;
+use InteractiveSolutions\HoneycombCore\Providers\HCBaseServiceProvider;
+use InteractiveSolutions\HoneycombCore\Providers\HCCoreServiceProvider;
 use interactivesolutions\honeycombcoreui\providers\HCCoreUiServiceProvider;
 use interactivesolutions\honeycombgalleries\app\providers\HCGalleriesServiceProvider;
 use interactivesolutions\honeycomblanguages\app\providers\HCLanguagesServiceProvider;
