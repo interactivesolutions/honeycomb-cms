@@ -13,7 +13,7 @@ return [
     | By default admin url is "/admin"
     |
     */
-    'admin_url' => 'admin',
+    'admin_url' => env('HC_ADMIN_URL', 'admin'),
 
     /*
     |--------------------------------------------------------------------------
